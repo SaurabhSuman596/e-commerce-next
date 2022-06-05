@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import Head from 'next/Head';
+import Head from 'next/head';
 import { AppBar, Link, Toolbar, Typography, Badge } from '@mui/material';
 import { Container } from '@mui/system';
 import useStyle from '../utils/styles';
