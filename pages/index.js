@@ -1,14 +1,4 @@
-import {
-  Card,
-  CardActionArea,
-  CardContent,
-  CardMedia,
-  Grid,
-  Typography,
-  CardActions,
-  Button,
-  Link,
-} from '@mui/material';
+import { Grid, Typography, Link } from '@mui/material';
 import Layout from '../components/Layout';
 import NextLink from 'next/link';
 import db from '../utils/db';
@@ -23,7 +13,6 @@ import useStyles from '../utils/styles';
 
 export default function Home(props) {
   const classes = useStyles();
-  const router = useRouter();
   const { state, dispatch } = useContext(Store);
   const { topRatedProducts, featuredProducts } = props;
   console.log(featuredProducts);
