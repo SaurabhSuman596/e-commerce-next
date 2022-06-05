@@ -7,7 +7,7 @@ import NextLink from 'next/link';
 import { Store } from '../utils/Store';
 
 const Layout = ({ title, desc, children }) => {
-  const { state, dispatch } = useContext(Store);
+  const { state } = useContext(Store);
   const { cart } = state;
   const classes = useStyle();
   return (
