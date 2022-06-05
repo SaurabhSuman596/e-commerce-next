@@ -1,7 +1,7 @@
 {
   "env" : {"browser":true,"node":true},
   "extends": ["eslint:recommended","next/core-web-vitals"],
-  "parser": "bable-eslint",
+  "parser": "react-scripts/node_modules/babel-eslint",
 	"parserOptions": {
 		"ecmaVersion": 6,
 		"sourceType": "script",
