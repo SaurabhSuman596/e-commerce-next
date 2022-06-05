@@ -44,9 +44,9 @@ const Cart = () => {
     dispatch({ type: 'CART_REMOVE_ITEM', payload: item });
   };
 
-  const checkoutHandler = () => {
-    router.push('/shipping');
-  };
+  // const checkoutHandler = () => {
+  //   router.push('/shipping');
+  // };
 
   const handleCheckOut = (quantity = 0) => {
     window.alert('your order has been placed');
@@ -146,11 +146,10 @@ const Cart = () => {
                 </ListItem>
                 <ListItem>
                   <Button
-                    onClick={checkoutHandler}
+                    onClick={handleCheckOut}
                     variant="contained"
                     color="primary"
                     fullWidth
-                    onClick={handleCheckOut}
                   >
                     Check Out
                   </Button>
