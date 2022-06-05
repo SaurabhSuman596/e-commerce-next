@@ -24,7 +24,7 @@ import dynamic from 'next/dynamic';
 import axios from 'axios';
 import { useRouter } from 'next/router';
 
-const cart = () => {
+const Cart = () => {
   const router = useRouter();
   const { state, dispatch } = useContext(Store);
   const {
@@ -164,4 +164,4 @@ const cart = () => {
   );
 };
 
-export default dynamic(() => Promise.resolve(cart), { ssr: false });
+export default dynamic(() => Promise.resolve(Cart), { ssr: false });

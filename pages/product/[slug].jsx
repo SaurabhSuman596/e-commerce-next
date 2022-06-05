@@ -18,7 +18,7 @@ import { Store } from '../../utils/Store';
 import axios from 'axios';
 import { useRouter } from 'next/router';
 
-const slug = ({ product }) => {
+const Slug = ({ product }) => {
   const router = useRouter();
   const { state, dispatch } = useContext(Store);
   const classes = useStyle();
@@ -136,4 +136,4 @@ export async function getServerSideProps(context) {
   };
 }
 
-export default slug;
+export default Slug;
