@@ -1,4 +1,11 @@
 {
   "env" : {"browser":true,"node":true},
-  "extends": ["eslint:recommended","next/core-web-vitals"]
+  "extends": ["eslint:recommended","next/core-web-vitals"],
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "script"
+	},
+	"rules": {
+		"global-require": "off"
+	}
 }
