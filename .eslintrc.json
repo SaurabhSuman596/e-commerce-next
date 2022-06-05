@@ -3,7 +3,10 @@
   "extends": ["eslint:recommended","next/core-web-vitals"],
 	"parserOptions": {
 		"ecmaVersion": 6,
-		"sourceType": "script"
+		"sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
+    }
 	},
 	"rules": {
 		"global-require": "off"
